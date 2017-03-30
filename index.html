@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head><body onLoad="MM_preloadImages('imagenes/inicio2.jpg','imagenes/definicion4.jpg','imagenes/evolucion2.jpg','imagenes/evolucion4.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Telefonia Celular </h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Telefono celular</h1>
+      <div>
+      <p>Esta es la imagen de un celular </p>
+      <br>
+      </div>
+      <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/inicio2.jpg',1)"><img src="imagenes/inicio.jpg" width="300" height="200" id="Image4"></a> </div>
+      </div>
+     </div>
+     <div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Definicion</h2>
+      <p>Muestra la definicion de un telefono.</p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Historia</h2>
+         <p> Muestra la historia del telefono </p>
+         </a>  
+         </li>
+         <li class="ui-first-child ui-last-child">
+          <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Clasificacion </h2>
+           <p>Muestra la clasificacion en gamas</p>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r ">
+              <h2>Compañias</h2>
+              <p>Muestra las compañias que ofrecen el servicio</p>
+              </a>
+             </li>
+             <li class="ui-first-child ui-last-child">
+               <a href="#Pagina5" class="ui-btn ui-btn ui-btn-icon-right ui-icon-carat-r">
+                  <h2>Telefonos del futuro</h2>
+                  <P>Muestra telefonos del futuro</P>
+             </a>
+             </li>
+             </ul>
+        </div>
+        <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+          <div>
+            <img src="res/android/mdpi.png" width="46" height="46">
+          </div>
+        <div>
+         <h4>Aplicacion dos</h4>
+         <h4> Jose Alberto Rocha Rincon </h4>
+       </div>
+     </div>
+     </div>
+     <!--Aqui comienza-->
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>DEFINICION</h1>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>DEFINICION 1</h1>
+      <div>
+      <p>Esta es la definicion 1 </p>
+      <br>
+      </div>
+      <div>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/definicion2.jpg',0)"><img src="imagenes/definicion.jpg" width="247" height="238" id="Image5"></a> </div>
+          </div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>DEFINICION 2</h1>
+      <div>
+      <p>Esta es la definicion 2 </p>
+      <br>
+      </div>
+      <div>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/definicion4.jpg',1)"><img src="imagenes/definicion3.jpg" width="247" height="187" id="Image6"></a> </div>
+        </div>
+        </div>
+        <p> Aparato telefónico de pequeño tamaño, portátil, sin hilos ni cables externos, para poder hablar desde cualquier lugar, siempre que sea dentro del área de cobertura del servicio que lo facilita. Se conoce como celular al dispositivo inalámbrico electrónico que está preparado para tener acceso a la telefonía celular, también conocida como móvil.En tanto, la denominación celular tiene su razón de ser en que cada una de las antenas repetidoras, que forman parte de la red, son células.</p>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4> Aplicacion dos , JARR </h4>
+        </div>
+       </div>
+     </div>
+      <!--Aqui comienza-->
+      <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> HISTORIA </h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+           <div data-role="collapsible" data-content-theme="false">
+     <h1>Historia 1</h1>
+      <div>
+      <p>Esta es la historia 1 </p>
+      <br>
+      </div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/evolucion2.jpg',1)"><img src="imagenes/evolucion.jpeg" width="221" height="132" id="Image7"></a>
+<div>
+</div>
+        </div>
+        </div>
+            <div data-role="collapsible" data-content-theme="false">
+     <h1>Historia 2</h1>
+      <div>
+      <p>Esta es la historia 2 </p>
+      <br>
+      </div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/evolucion4.jpg',1)"><img src="imagenes/evolucion3.jpg" width="212" height="121" id="Image8"></a>
+<div>
+</div>
+        </div>
+        </div>
+     <p>El teléfono es un dispositivo de telecomunicación diseñado para transmitir señales acústicas a distancia por medio de señales eléctricas.
+
+Durante mucho tiempo Alexander Graham Bell fue considerado el inventor del teléfono, junto a Elisha Gray. Sin embargo, Bell no fue el inventor de este aparato, sino solamente el primero en patentarlo. Esto ocurrió en 1876. El 11 de junio de 2001 el Congreso de Estados Unidos aprobó la resolución 269, que se reconocía que el inventor del teléfono había sido Antonio Meucci, que lo llamó teletrófono, y no Bell.
+
+En 1871 Meucci solo pudo, por dificultades económicas, presentar una breve descripción de su invento, pero no formalizar la patente ante la Oficina de Patentes de Estados Unidos.</p>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4> Aplicacion dos , JARR </h4>
+        </div>
+       </div>
+     </div>
+           <!--Aqui comienza-->
+        <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> Clasificacion </h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+           </div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>GAMA BAJA</h1>
+      <div>
+      <p>Esta es la gama baja </p>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/gamabaja.jpg" width="225" height="163">
+        <p>Las características de baja gama con algunas especificaciones de móviles de media gama, sobre todo en lo relativo a la pantalla, cantidad de megapíxeles de la cámara fotográfica y el sistema operativo. Deben tener al menos display de 3 pulgadas, enlace a redes 3G, procesador de un núcleo con frecuencia de velocidad de 1 GHz y batería de 1.100 miliamperios-hora. La solidez del diseño y cómodos teclados que facilitan la escritura son dos de sus puntos fuertes. Algunos celulares con propiedades especiales que los distinguen de otros móviles de baja gama, también pueden ser incluidos en este grupo.  </p>
+          </div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>GAMA MEDIA</h1>
+      <div>
+      <p>Esta es la gama media </p>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/gamamedia.jpg" width="280" height="189">
+        <p>Los smartphones de media gama se caracterizan por tener pantallas de calidad, pero de menor tamaño, resolución y profundidad de pixeles por pulgada; en la mayoría de los casos funcionan con una versión anterior a la más actual de su sistema operativo; los procesadores no tienen la potencia de los que encontramos en gamas superiores, y las cámaras y fotográficas generalmente cuentan con menos cantidad de megapíxeles.</p>
+          </div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>GAMA ALTA</h1>
+      <div>
+      <p>Esta es la gama alta </p>
+      <br>
+      </div>
+      <div>
+       <img src="imagenes/gamaalta.jpg" width="295" height="119">
+       <p>Aquí agruparemos a los teléfonos celulares no sólo considerados como emblemáticos de cada empresa fabricante (Samsung Galaxy S4, LG G2, Sony Xperia Z, etc.), sino también por reunir todas las características, componentes, avances, tendencias e innovaciones que proporciona la tecnología móvil para el momento del lanzamiento, en lo concerniente a su funcionamiento: pantalla, acceso a redes de máxima velocidad, conectividad, versión del sistema operativo, procesador y la frecuencia en GHz, memoria RAM, batería, capacidad y servicios gratuitos de almacenamiento, además de la cámara fotográfica y video.</p>
+          </div>
+        </div>
+        
+           </div>
+          <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4>Aplicacion dos JARR</h4>
+           </div>
+           </div>
+           </div>
+           <!--Aqui comienza-->
+        <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+         <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> Compañias </h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+          <!--colapsable-->
+      <div data-role="collapsible" data-content-theme="false">
+     <h1>Telcel</h1>
+      <div>
+      <p>Esta es la compañia Telcel </p>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/Telcel.png" width="334" height="98">
+          </div>
+          <a href="http://www.telcel.com" target="_self">Clic para ir a la pagina</a>
+        </div>
+           <div data-role="collapsible" data-content-theme="false">
+     <h1>Movistar</h1>
+      <div>
+      <p>Esta es la compañia movistar </p>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/movistar.jpg" width="83" height="86">
+          </div>
+          <a href="http://www.movistar.com.mx/" target="_self">clic para ir a la pagina</a>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>Unefon</h1>
+      <div>
+      <p>Esta es la compañia unefon </p>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/Unefon.png" width="249" height="88">
+          </div>
+          <a href="http://www.unefon.com.mx/">Clic para visitar la pagina</a>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>AT&T </h1>
+      <div>
+      <p>Esta es la compañia AT&T </p>
+      <br>
+      </div>
+      <div>
+       <img src="imagenes/atyt.jpg" width="289" height="127">
+          </div>
+          <a href="http://www.att.com.mx/" target="_self">Clic para visitar la pagina</a>
+        </div>
+           </div>
+          <!--colapsable-->
+           </div>
+          <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4>Aplicacion dos JARR</h4>
+           </div>
+           </div>
+           </div>
+           <!--Aqui comienza-->
+        <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1> Telefonos del futuro </h1>
+        </div>
+        <div data-role="content" align="center">
+         <div>
+          <!--colapsable-->
+      <div data-role="collapsible" data-content-theme="false">
+     <h1>Nexbit Robin</h1>
+      <div>
+      <p>Esta es el celular Nextbit Robin </p>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/nextbit-robin-1399-027.jpg" width="341" height="175">
+          </div>
+          <p>El celular Robin trae una función nueva que permite almacenar temporalmente apps y fotos en línea cuando tu almacenamiento se está agotando. No hay otro celular que ofrezca esta clase de función de almacenamiento "inteligente" y Nextbit ofrece 100GB de almacenamiento en la nube para permitir que esto funcione correctamente.Es algo bueno que un fabricante, así no sea una empresa muy conocida, traiga un diseño nuevo y funciones totalmente nuevas en un celular.</p>
+        </div>
+           <div data-role="collapsible" data-content-theme="false">
+     <h1>Nokia twist</h1>
+      <div>
+      <p>Esta es el nuevo nokia </p>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/nokia-twist-2.jpg" width="258" height="247">
+          </div>
+          <p>Hace poco os hablábamos del Nokia Kinetic Lab y de un interesante prototipo de terminal flexible cuya pantalla se podía doblar. Ahora Nokia nos adelanta un concepto de smartphone que utiliza en parte esta tecnología flexible para potenciar un uso más… ergonómico y humano. La idea de Nokia es potenciar la posibilidades de interacción con un dispositivo flexible, usar nano tecnología para crear nuevos acabados y por supuesto aprovechar nuevas interfaces de uso. La forma es un poco extraña pero la tecnología flexible ya la hemos probado y funciona, así que con suerte lo veremos en nuestras manos algún año de estos.</p>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>Proyecto Ara</h1>
+      <div>
+      <p>Esta es el proyecto ara </p>
+      <br>
+      </div>
+      <div>
+        <img src="imagenes/futuro3.jpg" width="354" height="165">
+          </div>
+          <p>Proyecto Ara es el nombre en clave de una iniciativa de Google que tiene como objetivo desarrollar una plataforma de hardware libre para la creación de los teléfonos inteligentes modulares. La plataforma incluirá un marco estructural con módulos de teléfonos inteligentes a elección del propietario, tales como una pantalla, un teclado o una batería adicional. Esto permitiría a los usuarios cambiar módulos que no funcionen o actualizar módulos individuales a medida que las innovaciones vayan surgiendo, proporcionando ciclos de vida mucho más largos y reduciendo la contaminación producida por basura electrónica</p>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+     <h1>Black Berry </h1>
+      <div>
+      <p>Esta es el nuevo BlackBerry </p>
+      <br>
+      </div>
+      <div>
+       <img src="imagenes/futuro4black.jpg" width="283" height="162">
+          </div>
+          <p>BlackBerry Mercury, un smartphone que será el encargado de traer un elemento característico de la marca: el teclado físico.La BlackBerry Mercury apuesta por una apariencia bastante clásica que combina un chasis metálico con un acabado en un material tipo goma con una textura estriada para que no se resbale.</p>
+        </div>
+           </div>
+          <!--colapsable-->
+          </div>
+          <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4>Aplicacion dos JARR</h4>
+           </div>
+           </div>
+           </div>
+  </body>
+</html>
